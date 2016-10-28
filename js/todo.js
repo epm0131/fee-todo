@@ -1,7 +1,7 @@
 (function(){
+  var itemArrayList =[];
 
-
-function toDoList(text) {
+  function toDoList(text) {
 
     var listItem = document.createElement('li');
 
@@ -21,16 +21,19 @@ function toDoList(text) {
     buttonDelete.innerText = 'X';
     articleItem.appendChild(buttonDelete);
 
-    document.querySelector('ul').appendChild(listItem);
-}
+    document
+    .querySelector('ul')
+    .appendChild(listItem);
+  }
 
-document
-.querySelector('form')
-.addEventListener('submit', function pressKey(event) {
-  event.preventDefault();
-  var enteredData = document.querySelector('.new-todo').value;
+  document
+  .querySelector('form')
+  .addEventListener('submit', function pressKey(event) {
+   event.preventDefault();
+    var enteredData = document.querySelector('.new-todo').value;
 
-  toDoList(enteredData);
+    toDoList(enteredData);
+
   });
 
 
