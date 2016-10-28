@@ -34,6 +34,14 @@
 
     toDoList(enteredData);
 
+    var arrayObject = {
+      text: enteredData,
+      when: Date.now()
+
+    };
+
+    itemArrayList.push(arrayObject);
+    console.log(itemArrayList);
   });
 
 
