@@ -45,7 +45,11 @@
   });
 
 
-
+  document
+  .querySelector( 'ul' )
+  .addEventListener('click', function clickCompleted(event){
+    console.log(event);
+  });
 
 
 
